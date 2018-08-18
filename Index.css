@@ -1,0 +1,96 @@
+.main-window-div
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:url('src/images/back.jpg');
+    background-size:cover;
+}
+.window-div-child
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background:white;
+    height:60vh;
+    width:60%;
+    align-items:center;
+    background:linear-gradient(to right,#e2d9dc 50%, white 50%);
+    font-family: Georgia;
+}
+.score-chart
+{
+    display:flex;
+    flex-direction:column;
+}
+.main-score-chart-div
+{
+    display:flex;
+    align-items:space-around;
+    justify-content:space-evenly;
+    width:100%;
+}
+.current-score-div
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.roll-dice-main-div
+{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 18px;
+    justify-content:space-around;
+}
+.new-game
+{
+    padding: 25px;
+    font-size: 25px;
+}
+.players
+{
+    font-size:45px;
+    margin-bottom:20px;
+}
+.score-global
+{
+    font-size:20px;
+    text-align:center;
+}
+.current-parent
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+    background:#ff00008f;
+    margin-bottom: 18px;
+    justify-content:space-around;
+    height:4vh;
+}
+.dice-image
+{
+   height:60px;
+   width:auto;
+   box-shadow: 1px 6px 10px 2px rgba(0,0,0,0.2);
+}
+#roll-dice
+{
+   padding:12px;
+   background:#656680;
+   border:none;
+   background-color: lightskyblue;
+   box-shadow: 1px 6px 10px 2px rgba(0,0,0,0.3);
+   margin-bottom: 5px;
+} 
+#hold
+{
+   padding:12px;
+   background:#8c2740;
+   border:none;
+   background-color: lightskyblue;
+   box-shadow: 1px 6px 10px 2px rgba(0,0,0,0.3);
+   margin-bottom: 5px;
+}
