@@ -7,21 +7,41 @@
     </head>
     <body>
         <div class="main-window-div">
+            <div class="form-fill" id="forms">
+                <form name="test">
+                    <div class="form-fill-child">
+                        <div>
+                            <label>
+                                <input type="text" name="player1" value="aa" placeholder="Player1" id="input-0" maxlength="15"> 
+                            </label>
+                            <label>VS</label>
+                            <label>
+                                <input type="text" name="player2" placeholder="Player2" id="input-1" maxlength="15">
+                            </label>
+                        </div>
+                        <div class="submit-form-div">
+                            <label>
+                                <button type="button" id="submit-data">Ok</button>
+                            </label>
+                        </div>
+                    </div>
+                </form> 
+            </div>
             <div class="window-div-child" id="child-id">
                 <div class="new-game">
                     NEW GAME
                 </div>  
                 <div class="main-score-chart-div">
                     <div class="score-chart">
-                        <div class="players active" id="player-0">
+                        <div class="players" id="player-0">
                             Player 1
                         </div>
                         <div class="score-global" id="global-0">
                             0 
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="dice-main-div">
+                        <div class="dice-child">
                             <img id="dice-score" class="dice-image" src="./src/images/dice-1.png" /> 
                         </div> 
                     </div>
