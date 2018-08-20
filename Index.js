@@ -72,6 +72,9 @@ function initialPlayers()
         document.getElementById("player-1").innerHTML=input2;
     }
     document.getElementById("forms").style.display="none";
-
-
 }
+//refresing on new game
+document.querySelector(".new-game-button").addEventListener('click',function()
+    {
+        document.location.reload(true)
+    });

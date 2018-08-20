@@ -6,6 +6,7 @@
     height:100vh;
     background-image:url('src/images/back.jpg');
     background-size:cover;
+    background-attachment:fixed;
 }
 .window-div-child
 {
@@ -63,6 +64,12 @@
 {
     padding: 25px;
     font-size: 25px;
+}
+.new-game-button
+{
+   background-color:lightskyblue;
+   padding:6px;
+
 }
 .players
 {
