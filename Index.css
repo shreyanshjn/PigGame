@@ -1,3 +1,7 @@
+body
+{
+    margin:0px;
+}
 .main-window-div
 {
     display:flex;
@@ -7,6 +11,8 @@
     background-image:url('src/images/back.jpg');
     background-size:cover;
     background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center center;
 }
 .window-div-child
 {
@@ -140,4 +146,64 @@
 .submit-form-div
 {
     margin-top:12px;
+}
+.rules-button
+{
+    position:absolute;
+    top:10px;
+    right:10px;
+    padding:12px;
+    background:#656680;
+    border:none;
+    background-color: lightskyblue;
+    box-shadow: 1px 6px 10px 2px rgba(0,0,0,0.3);
+    margin-bottom: 5px;
+}
+.games-rules
+{
+    position:fixed;
+    display:none;
+}
+.rules-games-fixed
+{
+    display:flex;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0,0,0,0.93);
+    color:white;
+    text-transform:uppercase;
+    line-height:2em;
+    font-family:arial;
+}
+.games-rules-close-button
+{
+    position:absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 30px;
+    cursor:pointer;
+}
+@media only screen and (max-width:760px)
+{
+    .main-window-div
+    {
+        background-image:none;
+    }
+    .window-div-child
+    {
+        height:100vh;
+        width:100%;
+    }
+    .rules-games-fixed> ul
+    {
+       font-size:12px;
+       line-height:2em;
+    }
+    .form-fill >form > div>div> label >input
+    {
+        width:30vw;
+    }
 }

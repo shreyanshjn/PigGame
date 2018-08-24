@@ -78,3 +78,13 @@ document.querySelector(".new-game-button").addEventListener('click',function()
     {
         document.location.reload(true)
     });
+//games rules
+document.querySelector(".rules-button").addEventListener('click',function()
+    {
+       document.querySelector(".games-rules").classList="rules-games-fixed";
+    });
+document.querySelector(".games-rules-close-button").addEventListener('click',function()
+{
+       document.querySelector(".rules-games-fixed").classList="games-rules";
+});
+

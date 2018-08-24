@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Roll dice</title>
         <link rel="stylesheet" href="./Index.css">
     </head>
@@ -27,6 +28,20 @@
                     </div>
                 </form> 
             </div>
+            <div>
+                <button href="" class="rules-button">Game Rules</button>
+            </div> 
+            <div class="games-rules">
+                <span class="games-rules-close-button">x</span>
+                <ul>
+                    <h1 style="text-align:center">GAME RULES:</h1>
+                    <li>The game has 2 players, playing in rounds</li>
+                    <li>In each turn, a player rolls a dice as many times as he wishes. Each result get added to his current score</li>
+                    <li>BUT, if the player rolls 1 or consecutively two times six,he loses his current score. After that, it's the next player's turn</li>
+                    <li>The player can choose to 'Hold', which means that his CURRENT score gets added to his global score. After that, it's the next player's turn</li>
+                    <li>The first player to reach 100 points on GLOBAL score wins the game</li>
+                </ul>
+            </div> 
             <div class="window-div-child" id="child-id">
                 <div class="new-game">
                     <button class="new-game-button">
