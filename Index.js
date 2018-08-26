@@ -1,7 +1,7 @@
-let activeplayer=0,current,gameactive=true,counter=0;
+let activeplayer=0,current,gameactive=true;
 let scores=[0,0];
 let initial=[0,0];
-document.getElementById('dice-score').style.visibility="hidden";
+document.getElementById("dice-score").style.visibility="hidden";
 function randomNo()
 {
     if(gameactive)
@@ -10,7 +10,7 @@ function randomNo()
         initial[0]=initial[1];
         initial[1]=dice;
         document.getElementById("dice-score").src="./src/images/dice-"+dice+".png";
-        document.getElementById('dice-score').style.visibility="visible";
+        document.getElementById("dice-score").style.visibility="visible";
         current=document.getElementById("current-"+activeplayer);
         current.innerHTML=(dice!==1)?Number(dice)+Number(current.innerHTML):0;
         if(dice==1 || (initial[0]==6 && initial[1]==6))
@@ -18,7 +18,7 @@ function randomNo()
             current.innerHTML="0";
             changePlayer();
         }
-        document.getElementById("hold").addEventListener('click',update);
+        document.getElementById("hold").addEventListener("click",update);
     }
 }
 function update()
@@ -54,10 +54,10 @@ function changePlayer()
     initial[0]=0;
     initial[1]=0;
 }
-document.getElementById("roll-dice").addEventListener('click',randomNo);
+document.getElementById("roll-dice").addEventListener("click",randomNo);
 
 // form elements manipulation
-document.getElementById("submit-data").addEventListener('click',initialPlayers);
+document.getElementById("submit-data").addEventListener("click",initialPlayers);
 function initialPlayers()
 {
 
@@ -74,17 +74,17 @@ function initialPlayers()
     document.getElementById("forms").style.display="none";
 }
 //refresing on new game
-document.querySelector(".new-game-button").addEventListener('click',function()
-    {
-        document.location.reload(true)
-    });
-//games rules
-document.querySelector(".rules-button").addEventListener('click',function()
-    {
-       document.querySelector(".games-rules").classList="rules-games-fixed";
-    });
-document.querySelector(".games-rules-close-button").addEventListener('click',function()
+document.querySelector(".new-game-button").addEventListener("click",function()
 {
-       document.querySelector(".rules-games-fixed").classList="games-rules";
+    document.location.reload(true);
+});
+//games rules
+document.querySelector(".rules-button").addEventListener("click",function()
+{
+    document.querySelector(".games-rules").classList="rules-games-fixed";
+});
+document.querySelector(".games-rules-close-button").addEventListener("click",function()
+{
+    document.querySelector(".rules-games-fixed").classList="games-rules";
 });
 
