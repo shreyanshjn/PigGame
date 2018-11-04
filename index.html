@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="keywords" content="Piggame,Javascript games,dice game, roll-dice game">
+        <meta name="description" content="Play piggame or roll dice game for free.Play with computer or with your friend">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127952345-1"></script>
@@ -23,11 +25,23 @@
                     <div class="form-fill-child">
                         <div>
                             <label>
+                                <input type="radio" name="mode" value="" id="player-mode"> 
+                                Player VS Player
+                            </label>
+                        </div>
+                        <div class="fill-player-names">
+                            <label>
                                 <input type="text" name="player1" value="" placeholder="Player1" id="input-0" maxlength="15"> 
                             </label>
                             <label>VS</label>
                             <label>
                                 <input type="text" name="player2" placeholder="Player2" id="input-1" maxlength="15">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="mode" value="" id="computer"> 
+                                VS Computer
                             </label>
                         </div>
                         <div class="submit-form-div">
@@ -102,6 +116,10 @@
                 </div>
             </div>  
         </div>
+        <audio id="dice-roll-sound">
+            <source src="./src/sound/sound.WAV" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
     </body>
     <script src="./Index.js"></script>
 </html>
